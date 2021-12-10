@@ -1,0 +1,44 @@
+{
+  "tests": [
+    {
+      "name": "Ricerca 1",
+      "setup": "g++ main.cpp lib.cpp -o main",
+      "run": "./main",
+      "input": "5\r\n2.3\r\n-12.1\r\n123.2\r\n4.7\r\n-3",
+      "output": "123.2",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 25
+    },
+    {
+      "name": "Ricerca 2",
+      "setup": "g++ main.cpp lib.cpp -o main",
+      "run": "./main",
+      "input": "7\r\n-156.2\r\n0\r\n12.3\r\n8.1\r\n23.12\r\n22.1\r\n44.19",
+      "output": "44.19",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 25
+    },
+    {
+      "name": "Ricerca 3",
+      "setup": "g++ main.cpp lib.cpp -o main",
+      "run": "./main",
+      "input": "10\r\n1000\r\n30.77\r\n-625.80\r\n1.39\r\n485.97\r\n626.28\r\n-218.35\r\n-713.22\r\n-558.70\r\n-54.62",
+      "output": "1000",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 25
+    },
+    {
+      "name": "Ricerca 4",
+      "setup": "g++ main.cpp lib.cpp -o main",
+      "run": "./main",
+      "input": "20\r\n23.61\r\n24.17\r\n6.66\r\n6.69\r\n5.49\r\n-12.67\r\n7.99\r\n13.25\r\n-48.15\r\n-22.70\r\n14.39\r\n-26.27\r\n2.02\r\n52.3\r\n-13.78\r\n33.26\r\n-18.34\r\n31.49\r\n-35.82\r\n-9.73\r\n",
+      "output": "52.3",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 25
+    }
+  ]
+}
